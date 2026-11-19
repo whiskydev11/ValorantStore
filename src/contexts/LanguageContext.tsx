@@ -4,8 +4,8 @@ import React, { createContext, useContext } from 'react';
 import { translations } from '@/lib/translations';
 
 interface LanguageContextType {
-  language: 'th';
-  t: typeof translations.th;
+  language: 'en';
+  t: typeof translations.en;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -14,8 +14,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   return (
     <LanguageContext.Provider
       value={{
-        language: 'th',
-        t: translations.th,
+        language: 'en',
+        t: translations.en,
       }}
     >
       {children}
