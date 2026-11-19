@@ -4,8 +4,8 @@ import React, { createContext, useContext } from 'react';
 import { translations } from '@/lib/translations';
 
 interface LanguageContextType {
-  language: 'en';
-  t: typeof translations.en;
+  language: 'th';
+  t: typeof translations.th;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
