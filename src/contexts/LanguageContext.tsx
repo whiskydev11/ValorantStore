@@ -14,8 +14,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   return (
     <LanguageContext.Provider
       value={{
-        language: 'en',
-        t: translations.en,
+        language: 'th',
+        t: translations.th,
       }}
     >
       {children}
